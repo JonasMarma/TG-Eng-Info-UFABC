@@ -1,0 +1,260 @@
+{
+  "bytes": 86002,
+  "datahub": {
+    "created": "2017-11-08T22:07:21.107869",
+    "findability": "published",
+    "flowid": "core/house-prices-uk/10",
+    "modified": "2018-03-15T06:34:42.935850",
+    "owner": "core",
+    "ownerid": "core"
+  },
+  "hash": "ab37222b7818d7a639d51c139b09d400",
+  "id": "core/house-prices-uk",
+  "license": "PDDL-1.0",
+  "maintainers": [
+    {
+      "name": "Rufus Pollock",
+      "web": "http://rufuspollock.org/"
+    }
+  ],
+  "name": "house-prices-uk",
+  "resources": [
+    {
+      "bytes": 13961,
+      "datahub": {
+        "type": "original"
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/57f7bdef7ce02165d2d117389aab6e68.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "data_original",
+      "path": "archive/data.csv",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "any",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "name": "Price (All)",
+            "type": "number"
+          },
+          {
+            "name": "Change (All)",
+            "type": "number"
+          },
+          {
+            "name": "Price (New)",
+            "type": "number"
+          },
+          {
+            "name": "Change (New)",
+            "type": "number"
+          },
+          {
+            "name": "Price (Modern)",
+            "type": "number"
+          },
+          {
+            "name": "Change (Modern)",
+            "type": "number"
+          },
+          {
+            "name": "Price (Older)",
+            "type": "number"
+          },
+          {
+            "name": "Change (Older)",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "bytes": 550,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmpx_ep1a8v/core/house-prices-uk/validation_report/data/bd41151861470d2a52856ec3777e293a/validation_report.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "bd41151861470d2a52856ec3777e293a",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 13961,
+      "datahub": {
+        "derivedFrom": [
+          "data"
+        ],
+        "type": "derived/csv"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpx_ep1a8v/core/house-prices-uk/data_csv/data/678865a5ff34fcce2145b857b8a9f248/data_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "678865a5ff34fcce2145b857b8a9f248",
+      "name": "data_csv",
+      "path": "data/data_csv.csv",
+      "profile": "data-resource",
+      "rowcount": 261,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "Price (All)",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "Change (All)",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "Price (New)",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "Change (New)",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "Price (Modern)",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "Change (Modern)",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "Price (Older)",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "Change (Older)",
+            "type": "number"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 55867,
+      "datahub": {
+        "derivedFrom": [
+          "data"
+        ],
+        "type": "derived/json"
+      },
+      "dpp:streamedFrom": "/tmp/tmpx_ep1a8v/core/house-prices-uk/data_json/data/75c4ed5e2291dbf7676b410141230a01/data_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "75c4ed5e2291dbf7676b410141230a01",
+      "name": "data_json",
+      "path": "data/data_json.json",
+      "profile": "data-resource",
+      "rowcount": 261,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "name": "Price (All)",
+            "type": "number"
+          },
+          {
+            "name": "Change (All)",
+            "type": "number"
+          },
+          {
+            "name": "Price (New)",
+            "type": "number"
+          },
+          {
+            "name": "Change (New)",
+            "type": "number"
+          },
+          {
+            "name": "Price (Modern)",
+            "type": "number"
+          },
+          {
+            "name": "Change (Modern)",
+            "type": "number"
+          },
+          {
+            "name": "Price (Older)",
+            "type": "number"
+          },
+          {
+            "name": "Change (Older)",
+            "type": "number"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 1663,
+      "dpp:streamedFrom": "/tmp/tmpr9vr15ne/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Nationwide",
+      "title": "Nationwide",
+      "web": "http://www.nationwide.co.uk/hpi/historical.htm"
+    }
+  ],
+  "title": "House Prices in the UK since 1953",
+  "views": [
+    {
+      "name": "graph",
+      "spec": {
+        "group": "Date",
+        "series": [
+          "Price (All)"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "House Prices in the UK since 1953"
+    }
+  ]
+}
